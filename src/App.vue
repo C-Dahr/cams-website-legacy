@@ -1,21 +1,19 @@
 <template>
     <v-app>
-        <Navbar/>
+        <!--<Navbar/>-->
         <v-main>
-            <router-link to="/">Home</router-link> |
-            <router-link to="/about">About</router-link>
             <router-view/>
         </v-main>
     </v-app>
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue'
+//import Navbar from '@/components/Navbar.vue'
 
 export default {
     name: 'App',
     components: {
-        Navbar
+        //Navbar
     },
     data: () => ({
     }),
@@ -30,6 +28,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 61%, rgba(0,212,255,1) 100%);
 }
 
 #nav {

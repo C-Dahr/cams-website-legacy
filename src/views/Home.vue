@@ -1,16 +1,20 @@
 <template>
-  <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<v-container fill-height fluid>
+		<v-row align="center" justify="center">
+			<v-col align="center">
+				<h1 class="white--text text-xl-h1">Cameron Dahr</h1>
+				<v-divider class="mt-5" color="white" width="20%"></v-divider>
+			</v-col>
+		</v-row>
+	</v-container>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+	name: 'Home',
+	components: {
+	}
 }
+
 </script>
