@@ -3,7 +3,7 @@
 			<v-row align="center" justify="center" v-if="show">
 				<v-col cols="1">
 					<v-avatar size="300">
-						<img src="../assets/headshot.png" alt="Cameron">
+						<img src="/dist/assets/headshot.png" alt="Cameron">
 					</v-avatar>
 				</v-col>
 				<v-col  cols="4" align="center">
