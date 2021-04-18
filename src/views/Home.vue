@@ -3,7 +3,7 @@
 			<v-row align="center" justify="center" v-if="show">
 				<v-col cols="1">
 					<v-avatar size="300">
-						<img src="/dist/img/headshot.png" alt="Cameron">
+						<img src="../../public/assets/headshot.png" alt="Cameron">
 					</v-avatar>
 				</v-col>
 				<v-col  cols="4" align="center">
@@ -21,7 +21,7 @@
 							<v-icon large color="white">fab fa-facebook-square</v-icon>
 						</v-btn>
 						<v-btn icon target="_blank" href="https://letterboxd.com/Cam_Dahr/">
-							<v-img src="../assets/letterboxd.png" max-width="35"></v-img>
+							<v-img src="../../public/assets/letterboxd.png" max-width="35"></v-img>
 						</v-btn>
 					</v-row>
 				</v-col>
