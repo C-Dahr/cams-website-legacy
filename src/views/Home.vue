@@ -1,12 +1,16 @@
 <template>
 	<v-container fill-height fluid>
-		<v-row align="center" justify="center">
-			<transition name="fade">
-				<v-col align="center" v-if="show">
+			<v-row align="center" justify="center" v-if="show">
+				<v-col cols="1">
+					<v-avatar size="300">
+						<img src="@/assets/headshot.png" alt="Cameron">
+					</v-avatar>
+				</v-col>
+				<v-col  cols="4" align="center">
 					<h1 class="white--text text-xl-h1">Cameron Dahr</h1>
 					<v-divider class="mt-5 mb-5" color="white" width="20%"></v-divider>
 					<h3 class="white--text text-xl-h4">Full Stack Software Developer</h3>
-					<v-row cols="2" class="mt-8" align="center" justify="space-between" style="max-width: 10%">
+					<v-row cols="2" class="mt-8" align="center" justify="space-between" style="max-width: 30%">
 						<v-btn icon target="_blank" href="https://github.com/C-Dahr">
 							<v-icon large color="white">fab fa-github-square</v-icon>
 						</v-btn>
@@ -16,10 +20,22 @@
 						<v-btn icon target="_blank" href="https://www.facebook.com/cameron.dahr.1">
 							<v-icon large color="white">fab fa-facebook-square</v-icon>
 						</v-btn>
+						<v-btn icon target="_blank" href="https://letterboxd.com/Cam_Dahr/">
+							<v-img src="@/assets/letterboxd.png" max-width="35"></v-img>
+						</v-btn>
 					</v-row>
 				</v-col>
-			</transition>
-		</v-row>
+			</v-row>
+			<v-row align="center" justify="center" v-if="show">
+				<v-col cols="5" align="start">
+					<p class="white--text text-xl-h4">
+						About Me
+					</p>
+					<p class="white--text text-lg-h5">
+						Hi, my name is Cameron, and I am a Full Stack Software Developer. I graduated from the University of New Brunswick in May of 2020 with a degree in Software Engineering. My hobbies include playing video games, collecting board games and dice, reading/writing, and playing Dungeons and Dragons. I also enjoy watching movies, and log movies I watch on Letterboxd (link to my profile above)!
+					</p>
+				</v-col>
+			</v-row>
 	</v-container>
 </template>
 
