@@ -4,7 +4,7 @@
 			<v-row>
 				<v-col>
 					<v-row class="mb-15" align="center" justify="center">
-						<v-col cols="1">
+						<v-col cols="2" class="headshot">
 							<v-avatar size="300">
 								<img src="https://i.imgur.com/EchJRnK.png" alt="Cameron">
 							</v-avatar>
@@ -90,6 +90,12 @@ export default {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+
+@media only screen and (max-width: 1444px) {
+  .headshot {
+    display: none;
+  }
 }
 
 </style>
