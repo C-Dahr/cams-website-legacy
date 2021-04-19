@@ -55,7 +55,7 @@
 								About Me
 							</p>
 							<p class="white--text text-lg-h5" style="line-height: 2;">
-								Hi, my name is Cameron, and I am a Full Stack Software Developer. I graduated from the University of New Brunswick in May of 2020 with a degree in Software Engineering. My hobbies include playing video games, collecting board games and dice, reading/writing, and playing Dungeons and Dragons. I also enjoy watching movies, and log movies I watch on Letterboxd (link to my profile above)!
+								Hi, my name is Cameron, and I am a Full Stack Software Developer. I graduated from the University of New Brunswick in May of 2020 with a degree in Software Engineering. This is the landing page for the website I made using Vue.js to learn about web deployment. My hobbies include playing video games, collecting board games and dice, reading/writing, and playing Dungeons and Dragons. I also enjoy watching movies, and log movies I watch on Letterboxd (link to my profile above)! I also love the ocean; I hope to one day learn to scuba dive and my favorite animal is an octopus. 
 							</p>
 						</v-col>
 					</v-row>
