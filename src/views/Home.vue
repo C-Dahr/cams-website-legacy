@@ -14,18 +14,38 @@
 							<v-divider class="mt-5 mb-5" color="white" width="20%"></v-divider>
 							<h3 class="white--text text-xl-h4">Full Stack Software Developer</h3>
 							<v-row cols="2" class="mt-8" align="center" justify="space-between" style="max-width: 30%">
-								<v-btn icon target="_blank" href="https://github.com/C-Dahr">
-									<v-icon large color="white">fab fa-github-square</v-icon>
-								</v-btn>
-								<v-btn icon target="_blank" href="https://www.linkedin.com/in/cameron-dahr-8a943a129/">
+								<v-tooltip bottom>
+									<template v-slot:activator="{ on, attrs }">
+										<v-btn icon target="_blank" href="https://github.com/C-Dahr" v-bind="attrs" v-on="on">
+											<v-icon large color="white">fab fa-github-square</v-icon>
+										</v-btn>
+									</template>
+									<span>Github</span>
+								</v-tooltip>
+								<v-tooltip bottom>
+									<template v-slot:activator="{ on, attrs }">
+										<v-btn icon target="_blank" href="https://www.linkedin.com/in/cameron-dahr-8a943a129/" v-bind="attrs" v-on="on">
 									<v-icon large color="white">fab fa-linkedin</v-icon>
 								</v-btn>
-								<v-btn icon target="_blank" href="https://www.facebook.com/cameron.dahr.1">
-									<v-icon large color="white">fab fa-facebook-square</v-icon>
-								</v-btn>
-								<v-btn icon target="_blank" href="https://letterboxd.com/Cam_Dahr/">
-									<v-img src="https://i.imgur.com/GVXzUfZ.png" max-width="35"></v-img>
-								</v-btn>
+									</template>
+									<span>LinkedIn</span>
+								</v-tooltip>
+								<v-tooltip bottom>
+									<template v-slot:activator="{ on, attrs }">
+										<v-btn icon target="_blank" href="https://www.facebook.com/cameron.dahr.1" v-bind="attrs" v-on="on">
+											<v-icon large color="white">fab fa-facebook-square</v-icon>
+										</v-btn>
+									</template>
+									<span>Facebook</span>
+								</v-tooltip>
+								<v-tooltip bottom>
+									<template v-slot:activator="{ on, attrs }">
+										<v-btn icon target="_blank" href="https://letterboxd.com/Cam_Dahr/" v-bind="attrs" v-on="on">
+											<v-img src="https://i.imgur.com/GVXzUfZ.png" max-width="35"></v-img>
+										</v-btn>
+									</template>
+									<span>Letterboxd</span>
+								</v-tooltip>
 							</v-row>
 						</v-col>
 					</v-row>
