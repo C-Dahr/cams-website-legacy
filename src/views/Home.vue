@@ -13,7 +13,7 @@
 							<h1 class="white--text text-xl-h1">Cameron Dahr</h1>
 							<v-divider class="mt-5 mb-5" color="white" width="20%"></v-divider>
 							<h3 class="white--text text-xl-h4">Full Stack Software Developer</h3>
-							<v-row cols="2" class="mt-8" align="center" justify="space-between" style="max-width: 30%">
+							<v-row cols="2" class="mt-8" align="center" justify="space-between" style="max-width: 50%">
 								<v-tooltip bottom>
 									<template v-slot:activator="{ on, attrs }">
 										<v-btn icon target="_blank" href="https://github.com/C-Dahr" v-bind="attrs" v-on="on">
