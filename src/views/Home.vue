@@ -5,8 +5,8 @@
 				<v-col>
 					<v-row class="mb-15" align="center" justify="center">
 						<v-col cols="2" class="headshot">
-							<v-avatar size="300">
-								<img src="https://i.imgur.com/EchJRnK.png" alt="Cameron">
+							<v-avatar size="100%">
+								<v-img src="https://i.imgur.com/EchJRnK.png" alt="Cameron"></v-img>
 							</v-avatar>
 						</v-col>
 						<v-col  cols="4" align="center">
@@ -92,7 +92,7 @@ export default {
   opacity: 0;
 }
 
-@media only screen and (max-width: 1444px) {
+@media only screen and (max-width: 609px) {
   .headshot {
     display: none;
   }
