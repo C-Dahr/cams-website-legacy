@@ -15,6 +15,7 @@
                 v-for="item in menuItems"
                 :key="item.title"
                 :to="item.path"
+                target="_blank"
             >
                 <v-icon left dark>{{ item.icon }}</v-icon>
                 {{ item.title }}

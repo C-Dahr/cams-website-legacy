@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import Taskmaster from '../views/taskmaster/Taskmaster.vue'
+import Taskmaster from '../views/Taskmaster.vue'
 
 Vue.use(VueRouter)
 
