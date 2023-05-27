@@ -19,6 +19,9 @@
 					<transition name="fade">
 						<Step1 v-if="step==1"/>
 					</transition>
+					<transition name="fade">
+						<Step2 v-if="step==2"/>
+					</transition>
 				</v-row>
 				<v-row class="mt-15" align="center" justify="center">
 					<v-btn
@@ -37,12 +40,14 @@
 <script>
 import Step0 from '../components/taskmaster/Step0.vue'
 import Step1 from '../components/taskmaster/Step1.vue'
+import Step2 from '../components/taskmaster/Step2.vue'
 
 export default {
 	name: 'Home',
 	components: {
 		Step0,
 		Step1,
+		Step2,
 	},
 	created() {
 		var storedStep = localStorage.getItem('TaskmasterStep')
@@ -67,6 +72,11 @@ export default {
 		step1(username) {
 			localStorage.setItem("Username", username)
 			this.step=2
+			localStorage.setItem("TaskmasterStep", this.step)
+			console.log(localStorage.getItem("Username"))
+		},
+		step2() {
+			this.step=3
 			localStorage.setItem("TaskmasterStep", this.step)
 			console.log(localStorage.getItem("Username"))
 		},
