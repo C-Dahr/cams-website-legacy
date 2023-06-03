@@ -1,21 +1,19 @@
 <template>
-    <v-card dark max-width="50%" color="rgb(0, 0, 0, 0.7)">
+    <v-card dark max-width="60%" color="rgb(0, 0, 0, 0.7)">
         <v-card-title class="white--text text-xl-h4">
-            Hi {{ username }}!
+            Woohoo!
         </v-card-title>
-        <v-card-text class="white--text text-lg-h5 text-left" style="line-height: 2;">
+        <v-card-text class="white--text text-lg-h5 text-left" style="line-height: 2;" color="rgb(50, 50, 50, 1)">
             <v-row>
                 <v-col>
-                    It's nice to meet you. Let's get started. Our first puzzle is a simple bit of trivia!
+                    You got it {{ username }}! That one was tricky, I hope my relaxing painting helped. Next up we've got this weird bunch of symbols:
                 </v-col>
             </v-row>
-            <v-row>
-                <v-col>What is the taskmaster's favorite movie?</v-col>
-            </v-row>
         </v-card-text>
+        <v-img class="ml-15 mr-10" max-width="90%" src="../../assets/dredge.png" alt="dredge"></v-img>
         <v-row justify="center">
             <v-col cols="8">
-                <v-text-field v-model="movie" :error="wrong" label="Answer"></v-text-field>
+                <v-text-field v-model="game" :error="wrong" label="Answer"></v-text-field>
             </v-col>
         </v-row>
         <v-row>
@@ -23,7 +21,7 @@
                 <v-btn
                     x-large
                     light 
-                    @click="checkMovie"
+                    @click="checkGame"
                 >
                     Submit
                 </v-btn>
@@ -33,7 +31,7 @@
         <v-card-text class="white--text text-lg-h5 text-left" style="line-height: 2;" v-if="wrong">
             <v-row >
                 <v-col>
-                    Nope, that's not it.
+                    Nope, that's not right.
                 </v-col>
             </v-row>
         </v-card-text>
@@ -41,7 +39,7 @@
         <v-card-text class="white--text text-lg-h5 text-left" style="line-height: 2;">
             <v-row >
                 <v-col>
-                    Aw man that's kinda tricky huh? He changes his mind a lot. If only there were some sort of list that you could check of all his favorite movies. Oh well.
+                    Must be some kind of secret code that you've got to crack, like Benedict Cumberbatch's character in Imitation Game. Have you seen Imitation game? It's a movie in which a gay man during the world war gets a job trying to crack the enigma machine, a complex code machine being used by the Germans to communication with one another.
                 </v-col>
             </v-row>
         </v-card-text>
@@ -53,27 +51,27 @@
 <script>
 
 export default {
-    name: 'Step2',
+    name: 'Step4',
     components: {
         
     },
     data() {
 		return {
             username: localStorage.getItem("Username"),
-            movie: "",
+            game: "",
             wrong: false,
 		}
 	},
     methods: {
-        checkMovie() {
-            if(this.movie.toUpperCase() == "AMADEUS"){
-                this.step2();
+        checkGame() {
+            if(this.game.toUpperCase() === "DREDGE"){
+                this.step4();
             }else{
                 this.wrong=true;
             }
         },
-        step2() {
-            this.$parent.step2();
+        step4() {
+            this.$parent.step4();
         }
     }
 };

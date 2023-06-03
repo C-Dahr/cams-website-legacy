@@ -74,7 +74,7 @@ export default {
 	},
     methods: {
         checkAnimal() {
-            if(this.movie == "Shark"){
+            if(this.movie.toUpperCase() === "SHARK"){
                 this.step3();
             }else{
                 this.wrong=true;

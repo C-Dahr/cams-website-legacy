@@ -25,8 +25,11 @@
 					<transition name="fade">
 						<Step3 v-if="step==3"/>
 					</transition>
+					<transition name="fade">
+						<Step4 v-if="step==4"/>
+					</transition>
 				</v-row>
-				<v-row class="mt-15" align="center" justify="center">
+				<v-row class="mt-15 mb-10" align="center" justify="center">
 					<v-btn
 					x-large
 					dark 
@@ -45,6 +48,7 @@ import Step0 from '../components/taskmaster/Step0.vue'
 import Step1 from '../components/taskmaster/Step1.vue'
 import Step2 from '../components/taskmaster/Step2.vue'
 import Step3 from '../components/taskmaster/Step3.vue'
+import Step4 from '../components/taskmaster/Step4.vue'
 
 export default {
 	name: 'Home',
@@ -53,6 +57,7 @@ export default {
 		Step1,
 		Step2,
 		Step3,
+		Step4,
 	},
 	created() {
 		var storedStep = localStorage.getItem('TaskmasterStep')
@@ -78,22 +83,22 @@ export default {
 			localStorage.setItem("Username", username)
 			this.step=2
 			localStorage.setItem("TaskmasterStep", this.step)
-			console.log(localStorage.getItem("Username"))
 		},
 		step2() {
 			this.step=3
 			localStorage.setItem("TaskmasterStep", this.step)
-			console.log(localStorage.getItem("Username"))
 		},
 		step3() {
 			this.step=4
 			localStorage.setItem("TaskmasterStep", this.step)
-			console.log(localStorage.getItem("Username"))
+		},
+		step4() {
+			this.step=5
+			localStorage.setItem("TaskmasterStep", this.step)
 		},
 		reset() {
 			localStorage.setItem("Username", "")
 			this.step=0
-			localStorage.setItem("TaskmasterStep", this.step)
 		}
 	}
 }
