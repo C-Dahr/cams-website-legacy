@@ -63,13 +63,11 @@ export default {
 	},
 	created() {
 		var storedStep = localStorage.getItem('TaskmasterStep')
-		console.log(storedStep)
 		if (storedStep != null){
 			this.step == storedStep
 		}else{
 			this.step = 0
 		}
-		console.log(this.step)
 	},
 	data() {
 		return {
