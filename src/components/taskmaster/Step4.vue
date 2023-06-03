@@ -1,5 +1,5 @@
 <template>
-    <v-card dark max-width="60%" color="rgb(0, 0, 0, 0.7)">
+    <v-card dark max-width="60%" color="rgb(0, 0, 0, 0.7)" class="elevation-10">
         <v-card-title class="white--text text-xl-h4">
             Woohoo!
         </v-card-title>

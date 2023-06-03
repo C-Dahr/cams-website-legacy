@@ -4,7 +4,7 @@
 			<v-col>
 				<v-row class="mb-15" align="center" justify="center">
 					<v-col cols="2" class="headshot">
-						<v-avatar size="100%">
+						<v-avatar size="100%" class="elevation-20">
 							<v-img src="https://i.imgur.com/EchJRnK.png" alt="Cameron"></v-img>
 						</v-avatar>
 					</v-col>
@@ -49,7 +49,7 @@
 					</v-col>
 				</v-row>
 				<v-row class="mt-15" justify="center">
-					<v-card dark max-width="50%" color="rgb(0, 0, 0, 0.7)">
+					<v-card dark max-width="50%" color="rgb(0, 0, 0, 0.7)" class="elevation-10">
 						<v-card-title class="white--text text-xl-h4">
 							About Me
 						</v-card-title>

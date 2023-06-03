@@ -3,8 +3,8 @@
 		<v-row>
 			<v-col>
 				<v-row class="mt-5 mb-15" align="center" justify="center">
-					<v-col cols="2" class="headshot">
-						<v-sheet color="black" elevation="10" rounded="xl">
+					<v-col cols="2">
+						<v-sheet color="black" class="elevation-20" rounded="xl">
 							<v-img src="../assets/taskbot.jpg" alt="Taskbot"></v-img>
 						</v-sheet>
 					</v-col>
