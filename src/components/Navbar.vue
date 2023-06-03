@@ -22,6 +22,15 @@
             </v-btn>
         </v-toolbar-items>
         <v-spacer></v-spacer>
+            <v-btn
+                plain
+                key="Contact Us"
+                to="/contact"
+                target="_blank"
+            >
+                <v-icon left dark>mdi-phone</v-icon>
+                Contact Us
+            </v-btn>
     </v-app-bar>
 </template>
 
