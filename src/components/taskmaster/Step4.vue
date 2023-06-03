@@ -13,7 +13,7 @@
         <v-img class="ml-15 mr-10" max-width="90%" src="../../assets/dredge.png" alt="dredge"></v-img>
         <v-row justify="center">
             <v-col cols="8">
-                <v-text-field v-model="game" :error="wrong" label="Answer"></v-text-field>
+                <v-text-field v-model="game" :error="wrong" label="Answer" v-on:keyup.enter="checkGame"></v-text-field>
             </v-col>
         </v-row>
         <v-row>
@@ -39,7 +39,7 @@
         <v-card-text class="white--text text-lg-h5 text-left" style="line-height: 2;">
             <v-row >
                 <v-col>
-                    Must be some kind of secret code that you've got to crack, like Benedict Cumberbatch's character in Imitation Game. Have you seen Imitation game? It's a movie in which a gay man during the world war gets a job trying to crack the enigma machine, a complex code machine being used by the Germans to communication with one another.
+                    Must be some kind of secret code that you've got to crack, like Benedict Cumberbatch's character in Imitation Game. Have you seen Imitation game? It's a movie in which a gay man during the world war gets a job trying to crack the enigma machine, a complex code machine being used by the Germans to communicate with one another.
                 </v-col>
             </v-row>
         </v-card-text>

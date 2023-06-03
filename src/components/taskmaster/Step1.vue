@@ -8,7 +8,7 @@
         </v-card-text>
         <v-row justify="center">
             <v-col cols="8">
-                <v-text-field v-model="username" label="Name"></v-text-field>
+                <v-text-field v-model="username" label="Name" v-on:keyup.enter="step1"></v-text-field>
             </v-col>
         </v-row>
         <v-card-actions class="justify-center pb-5">

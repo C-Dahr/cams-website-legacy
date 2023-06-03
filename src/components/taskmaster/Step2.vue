@@ -15,7 +15,7 @@
         </v-card-text>
         <v-row justify="center">
             <v-col cols="8">
-                <v-text-field v-model="movie" :error="wrong" label="Answer"></v-text-field>
+                <v-text-field v-model="movie" :error="wrong" label="Answer" v-on:keyup.enter="checkMovie"></v-text-field>
             </v-col>
         </v-row>
         <v-row>
