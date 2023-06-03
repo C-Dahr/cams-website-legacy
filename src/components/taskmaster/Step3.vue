@@ -45,7 +45,7 @@
                 </v-col>
             </v-row>
         </v-card-text>
-        <v-img src="../../assets/shark_picture.png" alt="shark"></v-img>
+        <expandable-image class="ml-10 mr-10" :src="require('../../assets/shark_picture.png')" alt="shark"></expandable-image>
         <v-card-text class="white--text text-lg-h5 text-left" style="line-height: 2;">
             <v-row >
                 <v-col>

@@ -2,9 +2,11 @@
 	<v-container fill-height fluid>
 		<v-row>
 			<v-col>
-				<v-row class="mb-15" align="center" justify="center">
+				<v-row class="mt-5 mb-15" align="center" justify="center">
 					<v-col cols="2" class="headshot">
-						<v-img src="../assets/Taskmaster_logo.jpg" alt="Cameron"></v-img>
+						<v-sheet color="black" elevation="10" rounded="xl">
+							<v-img src="../assets/taskbot.jpg" alt="Taskbot"></v-img>
+						</v-sheet>
 					</v-col>
 					<v-col align="center" cols="4">
 						<h1 class="white--text text-xl-h1">Taskmaster</h1>
