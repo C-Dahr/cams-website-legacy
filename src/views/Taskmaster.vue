@@ -36,6 +36,9 @@
 					<transition name="fade">
 						<Step6 v-if="step==6"/>
 					</transition>
+					<transition name="fade">
+						<Step7 v-if="step==7"/>
+					</transition>
 				</v-row>
 				<v-row class="mt-15 mb-10" align="center" justify="center">
 					<v-btn
@@ -59,6 +62,7 @@ import Step3 from '../components/taskmaster/Step3.vue'
 import Step4 from '../components/taskmaster/Step4.vue'
 import Step5 from '../components/taskmaster/Step5.vue'
 import Step6 from '../components/taskmaster/Step6.vue'
+import Step7 from '../components/taskmaster/Step7.vue'
 
 export default {
 	name: 'Home',
@@ -70,6 +74,7 @@ export default {
 		Step4,
 		Step5,
 		Step6,
+		Step7,
 	},
 	created() {
 		var storedStep = localStorage.getItem('TaskmasterStep')
