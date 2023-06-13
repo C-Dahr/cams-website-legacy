@@ -43,8 +43,9 @@ export default {
     data() {
 		return {
 			menuItems: [
-                { title: 'About', path: '/', icon: 'mdi-home' },
+                { title: 'Home', path: '/', icon: 'mdi-home' },
                 { title: 'Taskmaster', path: '/taskmaster', icon: 'mdi-email' },
+                { title: 'Gallery', path: '/gallery', icon: 'mdi-camera' },
      ]
 		}
 	},

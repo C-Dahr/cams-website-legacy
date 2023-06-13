@@ -47,7 +47,7 @@
 <script>
 
 export default {
-	name: 'Home',
+	name: 'Contact',
 	components: {
 	},
 	data() {
