@@ -1,7 +1,7 @@
 <template>
 	<v-container fill-height fluid>
         <v-row class="mt-5 mb-15">
-            <v-col id="left-col" cols="5" justify="center" align="center" class="mt-15">
+            <v-col id="left-col" cols="5" justify="center" align="center" class="mt-0">
                 <v-row>
                     <v-col>
                         <h1 class="white--text text-xl-h1">Gallery</h1>
@@ -11,20 +11,25 @@
                 </v-row>
                 <v-row>
                     <v-col>
-                    <v-card dark max-width="70%" color="rgb(0, 0, 0, 0)" class="elevation-10">
-                        <v-carousel
-                            height="auto"
-                            cycle
-                            show-arrows-on-hover
-                        >
-                            <v-carousel-item
-                                v-for="(item,i) in carouselItems"
-                                :key="i"
+                        <v-card dark max-width="70%" color="rgb(0, 0, 0, 0)" class="elevation-10">
+                            <v-carousel
+                                height="auto"
+                                cycle
+                                show-arrows-on-hover
                             >
-                            <expandable-image :close-on-background-click=true :src="item.src"></expandable-image>
-                            </v-carousel-item>
-                        </v-carousel>
-                    </v-card>
+                                <v-carousel-item
+                                    v-for="(item,i) in carouselItems"
+                                    :key="i"
+                                >
+                                <expandable-image :close-on-background-click=true :src="item.src"></expandable-image>
+                                </v-carousel-item>
+                            </v-carousel>
+                        </v-card>
+                    </v-col>
+                </v-row>
+                <v-row>
+                    <v-col>
+                        <VueAudio :file="require('../assets/gallery/song.mp3')"></VueAudio>
                     </v-col>
                 </v-row>
             </v-col>
@@ -68,10 +73,12 @@
 </template>
 
 <script>
+import VueAudio from 'vue-audio';
 
 export default {
 	name: 'Gallery',
 	components: {
+        VueAudio
 	},
 	data() {
 		return {

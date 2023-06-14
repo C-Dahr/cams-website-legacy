@@ -36,7 +36,7 @@
         <v-card-text class="white--text text-lg-h5 text-left" style="line-height: 2;" v-if="wrong">
             <v-row >
                 <v-col>
-                    Not much use guessing, it could be anything. There's gotta be a way to figure out the code.
+                    Not much use guessing, it could be anything. There's gotta be a way to figure out the code. Some really should <b>CONTACT</b> support.
                 </v-col>
             </v-row>
         </v-card-text>

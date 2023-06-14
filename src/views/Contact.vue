@@ -22,7 +22,7 @@
 						<v-card-text class="white--text text-lg-h5 text-left" style="line-height: 2;">
                             <v-row>
                                 <v-col>
-                                    For any business inqueries, event planning, Dungeons and Dragons scheduling or to report technical errors, please reach out to us via email at:
+                                    For any business inqueries, event planning, Dungeons and Dragons scheduling or to report technical errors, <b>please reach out to us via email</b> at:
                                 </v-col>
                             </v-row>
                             <v-row>

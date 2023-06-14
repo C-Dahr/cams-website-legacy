@@ -77,7 +77,7 @@
         <v-card-text class="white--text text-lg-h5 text-left" style="line-height: 2;" v-if="wrong">
             <v-row >
                 <v-col>
-                    Not much use guessing, it could be anything. There's gotta be a way to figure out the code.
+                    You might as well give up and relax, take in the sights, look around, you'll be here a while.
                 </v-col>
             </v-row>
         </v-card-text>
@@ -85,7 +85,7 @@
         <v-card-text class="white--text text-lg-h5 text-left" style="line-height: 2;">
             <v-row >
                 <v-col>
-                    Oh what the hell. Oops, sorry. This puzzle is completely broken. I don't really know what to do here now, I guess you're stuck waiting until someone <b>contacts</b> support.
+                    These are kinda obscure huh. Oh well, I guess you'll just have to stay with me here forever :)
                 </v-col>
             </v-row>
         </v-card-text>
@@ -183,6 +183,8 @@ export default {
                 this.q5Errors.length === 0
             ){
                 this.step6();
+            }else{
+                this.wrong = true;
             }
         },
     }

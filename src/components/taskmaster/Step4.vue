@@ -31,7 +31,7 @@
         <v-card-text class="white--text text-lg-h5 text-left" style="line-height: 2;" v-if="wrong">
             <v-row >
                 <v-col>
-                    Nope, that's not right.
+                    Nope, that's not right. I've seen puzzles like this, the emojis represent words, and the letters in the brackets below it are letters you need to replace with other letters.
                 </v-col>
             </v-row>
         </v-card-text>
@@ -39,7 +39,7 @@
         <v-card-text class="white--text text-lg-h5 text-left" style="line-height: 2;">
             <v-row >
                 <v-col>
-                    Must be some kind of secret code that you've got to crack, like Benedict Cumberbatch's character in Imitation Game. Have you seen Imitation game? It's a movie in which a gay man during the world war gets a job trying to crack the enigma machine, a complex code machine being used by the Germans to communicate with one another.
+                    Must be some kind of secret code that you've got to crack, like Benedict Cumberbatch's character in Imitation Game. Have you seen Imitation Game? It's a movie in which a gay man during World War II gets a job trying to crack the enigma machine, a complex code machine being used by the Germans to communicate with one another. That's not related to the puzzle, I just like the movie.
                 </v-col>
             </v-row>
         </v-card-text>
