@@ -122,6 +122,7 @@ export default {
 		reset() {
 			localStorage.setItem("Username", "")
 			this.step=0
+			localStorage.setItem("TaskmasterStep", this.step)
 		}
 	}
 }
